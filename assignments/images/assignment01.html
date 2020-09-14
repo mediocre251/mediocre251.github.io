@@ -20,11 +20,16 @@
  <!--end head--> 
  <body style="background-color:lightgrey;"><!--apply gray background--> 
   <!--start body--> 
-  <h1>assignment 01 as of 9/13/2020</h1> 
-   <form action="/action_page.php"> 
-   <label for="howday">how is your day?</label>
-   <br /> <!--line break for separation and organization-->
-   <input type="text" id="howday" name="howday" value="good" />
+  <h2>please introduce yourself</h2>
+  <form action="/action_page.php">
+   <label for="fname">First name:</label><br>
+   <input type="text" id="fname" name="fname" value="John"><br>
+   <label for="lname">Last name:</label><br>
+   <input type="text" id="lname" name="lname" value="Doe"><br><br>
+   <input type="submit" value="Submit">
+  </form> 
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
    <br /> <!--line break for separation and organization-->
   </form> <!--end form-->
   <div class="square"> 
