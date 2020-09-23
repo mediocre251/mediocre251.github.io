@@ -1,6 +1,8 @@
 /* --- put your css here --- */ 
 h2 {background-color: #008000; }
 
+.igottabeme { font-family: Arial; }
+
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
   background-color: gray;
