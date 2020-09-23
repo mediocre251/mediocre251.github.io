@@ -1,5 +1,5 @@
 /* --- put your css here --- */ 
-h2 {background color: #000000; }
+h2 {background-color: #000000; }
 
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
