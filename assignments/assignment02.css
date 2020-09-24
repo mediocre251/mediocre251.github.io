@@ -5,7 +5,7 @@ h2 {background-color: #32CD32; }
 
 .classy {padding-left: 10px; }
 
-div {padding-bottom: 50px;}
+div {margin-bottom: 50px;}
 
 span.a {width: 100px; height: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow; }
 
@@ -13,6 +13,11 @@ span.b {width: 100px; height: 5px; padding-top: 5px; padding-bottom: 5px; paddin
 
 span.c {width: 100px; height: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow;}
 
+#cat {  position: fixed; bottom: 0; right: 0;}
+
+#dog {position:relative; left: -50px; top: -150px;}
+
+#bird {position: relative; left: 150px; top: 250px;}
 
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
