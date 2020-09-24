@@ -1,7 +1,7 @@
 /* --- put your css here --- */ 
 h2 {background-color: #008000; }
 
-.igottabeme { font-family: Arial; }
+.igottabeme { font-family: Arial, Helvetica, sans-serif; }
 .classy {text-indent: 10px; }
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
