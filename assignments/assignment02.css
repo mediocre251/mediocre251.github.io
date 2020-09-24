@@ -5,6 +5,10 @@ h2 {background-color: #008000; }
 
 .classy {padding-left: 10px; }
 
+div {padding-bottom: 50px;}
+
+
+
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
   background-color: gray;
