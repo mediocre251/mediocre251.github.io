@@ -19,6 +19,9 @@ span.c {width: 100px; height: 5px; padding-top: 5px; padding-bottom: 5px; paddin
 
 #bird {position: relative; left: 150px; top: 250px;}
 
+nav {position: fixed; padding: 5px; font-size: 20px; opacity: 90%;}
+
+
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
   background-color: gray;
