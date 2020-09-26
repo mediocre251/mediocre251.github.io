@@ -7,17 +7,18 @@ h2 {background-color: #32CD32; }
 
 div {margin-bottom: 50px;}
 
-span.a {width: 100px; height: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow; }
+span.a {width: 100px; height: 50px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow; }
 
-span.b {width: 100px; height: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow; }
+span.b {width: 100px; height: 50px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow;display: block;}
 
-span.c {width: 100px; height: 5px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow;}
+span.c {width: 100px; height: 50px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow;display: inline-block;}
+
 
 #cat {  position: fixed; bottom: 0; right: 0;}
 
 #dog {position:relative; left: -50px; top: -150px;}
 
-#bird {position: relative; left: 150px; top: 250px;}
+#bird {position: relative; left: 50px; top: 250px;}
 
 nav {position: fixed; padding: 5px; font-size: 20px; opacity: 90%;}
 
