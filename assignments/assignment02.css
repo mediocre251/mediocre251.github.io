@@ -1,32 +1,30 @@
 /* --- put your css here --- */ 
 body {background-color: skyblue;}
-
+/* ---apply skyblue to the body of the file--- */ 
 .igottabeme { font-family: Arial, Helvetica, sans-serif; }
-
+/* ---apply the fonts Arial, Helvetica, sans-serif to the igottabeme class--- */ 
 .classy {padding-left: 10px; }
-
+/* ---to specifically to the classy class apply padding to the left side of their text--- */ 
 div {margin-bottom: 50px;}
-
+/* ---to any and all div based code give them a bottom margin of 50 pixels--- */
 span.a {width: 100px; height: 50px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow; }
-
+/* ---for span with class of a apply the traits listed.--- */
 span.b {width: 100px; height: 50px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow;display: block;}
-
+/* ---for span with class of b apply the traits listed.--- */
 span.c {width: 100px; height: 50px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow;display: inline-block;}
-
-
+/* ---for span with class of c apply the traits listed.--- */
 #cat {  position: fixed; bottom: 0; right: 0;}
-
+/* ---for the image with id cat set to fixed and position inthe bottom right corner exactly.--- */
 #dog {position:relative; left: -50px; top: -150px;}
-
+/* ---for image with id of dog position exactly 50 pixels left and 150 pixels up relative to its original position.--- */
 #bird {position: relative; left: 50px; top: 250px;}
-
+/* ---for image with id of bird position exactly 50 pixels right and 250 pixels from its original position --- */
 nav {position: sticky; top: 0px; padding: 5px; font-size: 20px; opacity: 90%;background-color: #008000;}
-
-
-.stripeytreven {
+/* ---apply sticky to the position of the nav bar and set the background color to green--- */
+.stripeytreven {/* ---renamed to simplify use--- */
   background-color: gray;
 }
-.stripeytrodd {
+.stripeytrodd {/* ---renamed to simplify use--- */
   background-color: white;
 }
 .stripey th {
