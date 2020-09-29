@@ -17,7 +17,7 @@ img[src*="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Creative-Tai
 /* ---for the image with id cat set to fixed and position inthe bottom right corner exactly.--- */
 #dog {position:relative; left: -50px; top: -150px;}
 /* ---for image with id of dog position exactly 50 pixels left and 150 pixels up relative to its original position.--- */
-div#positionMe {position: relative; left: 250px; top: 200px;}
+img[src*="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Creative-Tail-Animal-bird.svg/128px-Creative-Tail-Animal-bird.svg.png"] {position: relative; left: 250px; top: 200px;}
 /* ---for image with id of bird position exactly 50 pixels right and 250 pixels from its original position --- */
 nav {position: sticky; top: 0px; padding: 5px; font-size: 20px; opacity: 90%;background-color: #008000;}
 /* ---apply sticky to the position of the nav bar and set the background color to green--- */
