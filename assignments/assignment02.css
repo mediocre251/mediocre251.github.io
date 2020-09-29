@@ -13,7 +13,7 @@ span.b {width: 100px; height: 50px; padding-top: 5px; padding-bottom: 5px; paddi
 /* ---for span with class of b apply the traits listed.--- */
 span.c {width: 100px; height: 50px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; border-style: solid; border-color: blue;border-width: 5px; background-color: yellow;display: inline-block;}
 /* ---for span with class of c apply the traits listed.--- */
-#cat {  position: fixed; bottom: 0; right: 0;}
+img[src*="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Creative-Tail-Animal-cat.svg/128px-Creative-Tail-Animal-cat.svg.png"]{  position: fixed; bottom: 0; right: 0;}
 /* ---for the image with id cat set to fixed and position inthe bottom right corner exactly.--- */
 #dog {position:relative; left: -50px; top: -150px;}
 /* ---for image with id of dog position exactly 50 pixels left and 150 pixels up relative to its original position.--- */
