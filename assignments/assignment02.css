@@ -15,7 +15,7 @@ span.c {width: 100px; height: 50px; padding-top: 5px; padding-bottom: 5px; paddi
 /* ---for span with class of c apply the traits listed.--- */
 img[src*="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Creative-Tail-Animal-cat.svg/128px-Creative-Tail-Animal-cat.svg.png"]{  position: fixed; bottom: 0; right: 0;}
 /* ---for the image with id cat set to fixed and position inthe bottom right corner exactly.--- */
-#dog {position:relative; left: -50px; top: -150px;}
+img[src*="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Creative-Tail-Animal-dog.svg/128px-Creative-Tail-Animal-dog.svg.png"]{position:relative; left: -50px; top: -150px;}
 /* ---for image with id of dog position exactly 50 pixels left and 150 pixels up relative to its original position.--- */
 img[src*="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Creative-Tail-Animal-bird.svg/128px-Creative-Tail-Animal-bird.svg.png"] {position: relative; left: 250px; top: 200px;}
 /* ---for image with id of bird position exactly 50 pixels right and 250 pixels from its original position --- */
