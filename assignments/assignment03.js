@@ -128,7 +128,7 @@ function subt1 (elem) {
 
 
 
-elem[5] = document.getElementById("4");
+elem[5] = document.getElementById("5");
 // display the number of children (all td elements)
 // console.log(elem.children.length);
 // display the content of the + button, which is the first child of the fifth element
