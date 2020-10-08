@@ -1,3 +1,6 @@
+//1. its still adding to OVER when clicking plus
+//correct the CURRENT value for the add1 so that its currrentOver
+
 let elem = [];
 // assign the entire table row for hole 1 to a variable, elem
 elem[1] = document.getElementById("1");
