@@ -27,10 +27,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -74,10 +72,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -120,10 +116,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -166,10 +160,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -216,10 +208,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -263,10 +253,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -309,10 +297,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -355,10 +341,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -405,10 +389,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -452,10 +434,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -498,10 +478,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -544,10 +522,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -592,10 +568,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -639,10 +613,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -685,10 +657,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -731,10 +701,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -779,10 +747,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
@@ -826,10 +792,8 @@ function add1 (elem) {
   }
         if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
-      let current = elem.children[3].innerHTML;
-      current = Number.parseInt(current);
-      elem.children[3].innerHTML = current + 1;
+    else if (elem.children[2].innerHTML>4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 function subt1 (elem) {
