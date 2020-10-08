@@ -1,8 +1,6 @@
 let elem = [];
 // assign the entire table row for hole 1 to a variable, elem
-elem[1]
-  = document.getElementById("1");
-
+elem[1] = document.getElementById("1");
 // display the number of children (all td elements)
 // console.log(elem.children.length);
 // display the content of the + button, which is the first child of the fifth element
@@ -11,6 +9,9 @@ elem[1]
 // assign a function to the + button
 elem[1].children[4].children[0].onclick 
   = function(){add1(elem[1]);};
+
+elem[1].children[4].children[1].onclick
+  = function(){subt1(elem[1]);};
 
 // create an "add1" function
 function add1 (elem) {
@@ -21,6 +22,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+}
+function subt1 (elem) {
+  if(elem.children[2].innerHTML > "0") {
+    let currentScore = elem.children[2].innerHTML;
+    currentScore = Number.parseInt(currentScore);
+    elem.children[2].innerHTML = currentScore - 1;
+}
 }
 
 /* your mission: 
