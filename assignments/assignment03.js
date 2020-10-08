@@ -1,4 +1,3 @@
-//1. its still adding to OVER when clicking plus
 //correct the CURRENT value for the add1 so that its currrentOver
 
 let elem = [];
