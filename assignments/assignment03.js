@@ -22,6 +22,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -29,6 +36,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
 }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 
@@ -54,6 +69,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -61,6 +83,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 elem[3] = document.getElementById("3");
@@ -85,6 +115,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -92,6 +129,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 elem[4] = document.getElementById("4");
@@ -116,6 +161,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -123,6 +175,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 
@@ -151,6 +211,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -158,6 +225,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
 }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 
@@ -183,6 +258,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -190,6 +272,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 elem[7] = document.getElementById("7");
@@ -214,6 +304,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -221,6 +318,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 elem[8] = document.getElementById("8");
@@ -245,6 +350,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -252,6 +364,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 
@@ -280,6 +400,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -287,6 +414,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
 }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 
@@ -312,6 +447,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -319,6 +461,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 elem[11] = document.getElementById("11");
@@ -343,6 +493,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -350,6 +507,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 elem[12] = document.getElementById("12");
@@ -374,6 +539,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -381,6 +553,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 
@@ -407,6 +587,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -414,6 +601,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
 }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 
@@ -439,6 +634,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -446,6 +648,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 elem[15] = document.getElementById("15");
@@ -470,6 +680,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -477,6 +694,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 elem[16] = document.getElementById("16");
@@ -501,6 +726,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -508,6 +740,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 
@@ -534,6 +774,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -541,6 +788,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
 }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 
@@ -566,6 +821,13 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";}
+    else if (elem.children[2].innerHTML>4&&elem.children[2].innerHTML <="8"){
+      let current = elem.children[3].innerHTML;
+      current = Number.parseInt(current);
+      elem.children[3].innerHTML = current + 1;
+    }
 }
 function subt1 (elem) {
   if(elem.children[2].innerHTML > "0") {
@@ -573,6 +835,14 @@ function subt1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
+      elem.children[3].innerHTML = "1";
+        }
+    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
+      let currentOver = elem.children[3].innerHTML;
+      currentOver = Number.parseInt(currentOver);
+      elem.children[3].innerHTML = currentOver - 1;
+    }
 }
 
 /* your mission: 
