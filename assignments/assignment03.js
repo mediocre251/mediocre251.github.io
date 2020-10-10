@@ -312,6 +312,7 @@ function add1(elem, elem19) {
             elem19.children[2].innerHTML = "1";
         }
         elem19.children[2].inneHTML = totalscore += 1;
+      elem19.children[1].innerHTML=partotal;
     } 
   else if (elem.children[2].innerHTML < "8") {
         let currentScore = elem.children[2].innerHTML;
@@ -322,13 +323,16 @@ function add1(elem, elem19) {
     }
   
   
-    if (elem.children[3].innerHTML == "-" && elem.children[2].innerHTML > 4) {
+    if (elem.children[2].innerHTML == 4) {
         elem.children[3].innerHTML = "1";
-    } 
-  else if (elem.children[2].innerHTML > 4) {
-        elem.children[3].innerHTML = elem.children[2].innerHTML - elem.children[1].innerHTML;
+    }  
+  else if (elem.children[2].innerHTML > 4 && elem.children[2].innerHTML<9) {
+        let currentover;
+        currentover = elem.children[2].innerHTML-elem.children[1].innerHTML;
+        elem.children[3].innerHTML = currentover;
     }
 }
+
 
 
 
@@ -343,12 +347,13 @@ function subt1(elem, elem19) {
     }
   
   
-    if (elem.children[3].innerHTML == "-" && elem.children[2].innerHTML > 4) {
+    if (elem.children[2].innerHTML > 4) {
         elem.children[3].innerHTML = "1";
-    }
-  else if (elem.children[2].innerHTML >= 4) {
-        elem.children[3].innerHTML = elem.children[2].innerHTML - elem.children[1].innerHTML;
-
+    }  
+  else if (elem.children[2].innerHTML >= 4 && elem.children[2].innerHTML<9) {
+        let currentover;
+        currentover = elem.children[2].innerHTML-elem.children[1].innerHTML;
+        elem.children[3].innerHTML = currentover;
     }
 }
 /* your mission: 
