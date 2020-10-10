@@ -1,5 +1,4 @@
 //correct the CURRENT value for the add1 so that its currrentOver
-
 let elem = [];
 // assign the entire table row for hole 1 to a variable, elem
 elem[1] = document.getElementById("1");
@@ -15,34 +14,6 @@ elem[1].children[4].children[0].onclick
 elem[1].children[4].children[1].onclick
   = function(){subt1(elem[1]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-}
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 
 elem[2] = document.getElementById("2");
@@ -58,34 +29,6 @@ elem[2].children[4].children[0].onclick
 elem[2].children[4].children[1].onclick
   = function(){subt1(elem[2]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 elem[3] = document.getElementById("3");
 // display the number of children (all td elements)
@@ -100,34 +43,6 @@ elem[3].children[4].children[0].onclick
 elem[3].children[4].children[1].onclick
   = function(){subt1(elem[3]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 elem[4] = document.getElementById("4");
 // display the number of children (all td elements)
@@ -141,35 +56,6 @@ elem[4].children[4].children[0].onclick
 
 elem[4].children[4].children[1].onclick
   = function(){subt1(elem[4]);};
-
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 
 
@@ -188,34 +74,6 @@ elem[5].children[4].children[0].onclick
 elem[5].children[4].children[1].onclick
   = function(){subt1(elem[5]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-}
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 
 elem[6] = document.getElementById("6");
@@ -231,34 +89,6 @@ elem[6].children[4].children[0].onclick
 elem[6].children[4].children[1].onclick
   = function(){subt1(elem[6]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 elem[7] = document.getElementById("7");
 // display the number of children (all td elements)
@@ -273,34 +103,6 @@ elem[7].children[4].children[0].onclick
 elem[7].children[4].children[1].onclick
   = function(){subt1(elem[7]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 elem[8] = document.getElementById("8");
 // display the number of children (all td elements)
@@ -315,34 +117,6 @@ elem[8].children[4].children[0].onclick
 elem[8].children[4].children[1].onclick
   = function(){subt1(elem[8]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 
 
@@ -361,35 +135,6 @@ elem[9].children[4].children[0].onclick
 elem[9].children[4].children[1].onclick
   = function(){subt1(elem[9]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-}
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-
 
 elem[10] = document.getElementById("10");
 // display the number of children (all td elements)
@@ -404,35 +149,6 @@ elem[10].children[4].children[0].onclick
 elem[10].children[4].children[1].onclick
   = function(){subt1(elem[10]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-
 elem[11] = document.getElementById("11");
 // display the number of children (all td elements)
 // console.log(elem.children.length);
@@ -446,34 +162,6 @@ elem[11].children[4].children[0].onclick
 elem[11].children[4].children[1].onclick
   = function(){subt1(elem[11]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 elem[12] = document.getElementById("12");
 // display the number of children (all td elements)
@@ -487,35 +175,6 @@ elem[12].children[4].children[0].onclick
 
 elem[12].children[4].children[1].onclick
   = function(){subt1(elem[12]);};
-
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 
 
@@ -532,34 +191,6 @@ elem[13].children[4].children[0].onclick
 elem[13].children[4].children[1].onclick
   = function(){subt1(elem[13]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-}
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 
 elem[14] = document.getElementById("14");
@@ -575,34 +206,6 @@ elem[14].children[4].children[0].onclick
 elem[14].children[4].children[1].onclick
   = function(){subt1(elem[14]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 elem[15] = document.getElementById("15");
 // display the number of children (all td elements)
@@ -617,35 +220,6 @@ elem[15].children[4].children[0].onclick
 elem[15].children[4].children[1].onclick
   = function(){subt1(elem[15]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-
 elem[16] = document.getElementById("16");
 // display the number of children (all td elements)
 // console.log(elem.children.length);
@@ -658,35 +232,6 @@ elem[16].children[4].children[0].onclick
 
 elem[16].children[4].children[1].onclick
   = function(){subt1(elem[16]);};
-
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-  }
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 
 
@@ -703,34 +248,6 @@ elem[17].children[4].children[0].onclick
 elem[17].children[4].children[1].onclick
   = function(){subt1(elem[17]);};
 
-// create an "add1" function
-function add1 (elem) {
-  if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
-  else if(elem.children[2].innerHTML <"8") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore + 1;
-  }
-        if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";}
-    else if (elem.children[2].innerHTML>4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
-function subt1 (elem) {
-  if(elem.children[2].innerHTML > "0") {
-    let currentScore = elem.children[2].innerHTML;
-    currentScore = Number.parseInt(currentScore);
-    elem.children[2].innerHTML = currentScore - 1;
-}
-          if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
-      elem.children[3].innerHTML = "1";
-        }
-    else if (elem.children[2].innerHTML>=4){
-      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
-    }
-}
 
 
 elem[18] = document.getElementById("18");
@@ -746,6 +263,8 @@ elem[18].children[4].children[0].onclick
 elem[18].children[4].children[1].onclick
   = function(){subt1(elem[18]);};
 
+
+
 // create an "add1" function
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") 
@@ -766,7 +285,7 @@ function subt1 (elem) {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
-  }
+}
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
