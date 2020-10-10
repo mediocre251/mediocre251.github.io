@@ -323,7 +323,7 @@ function add1(elem, elem19) {
     }
   
   
-    if (elem.children[2].innerHTML == 4) {
+    if (elem.children[2].innerHTML == 5) {
         elem.children[3].innerHTML = "1";
     }  
   else if (elem.children[2].innerHTML > 4 && elem.children[2].innerHTML<9) {
@@ -347,10 +347,8 @@ function subt1(elem, elem19) {
     }
   
   
-    if (elem.children[2].innerHTML > 4) {
-        elem.children[3].innerHTML = "1";
-    }  
-  else if (elem.children[2].innerHTML >= 4 && elem.children[2].innerHTML<9) {
+  
+   if (elem.children[2].innerHTML >= 4 && elem.children[2].innerHTML<9) {
         let currentover;
         currentover = elem.children[2].innerHTML-elem.children[1].innerHTML;
         elem.children[3].innerHTML = currentover;
