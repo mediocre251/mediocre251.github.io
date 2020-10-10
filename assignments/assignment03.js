@@ -39,10 +39,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -84,10 +82,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -128,10 +124,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -172,10 +166,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -220,10 +212,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -265,10 +255,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -309,10 +297,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -353,10 +339,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -401,10 +385,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -446,10 +428,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -490,10 +470,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -534,10 +512,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -580,10 +556,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -625,10 +599,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -669,10 +641,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -713,10 +683,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -759,10 +727,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
@@ -804,10 +770,8 @@ function subt1 (elem) {
           if(elem.children[3].innerHTML == "-"&&elem.children[2].innerHTML>4){ 
       elem.children[3].innerHTML = "1";
         }
-    else if (elem.children[2].innerHTML>=4&&elem.children[2].innerHTML <="8"){
-      let currentOver = elem.children[3].innerHTML;
-      currentOver = Number.parseInt(currentOver);
-      elem.children[3].innerHTML = currentOver - 1;
+    else if (elem.children[2].innerHTML>=4){
+      elem.children[3].innerHTML = elem.children[2].innerHTML -elem.children[1].innerHTML;
     }
 }
 
