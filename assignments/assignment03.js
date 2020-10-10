@@ -312,24 +312,30 @@ function add1(elem, elem19) {
             elem19.children[2].innerHTML = "1";
         }
         elem19.children[2].inneHTML = totalscore += 1;
-      elem19.children[1].innerHTML=partotal;
-    } 
-  else if (elem.children[2].innerHTML < "8") {
+        elem19.children[1].innerHTML = partotal;
+    } else if (elem.children[2].innerHTML < "8") {
         let currentScore = elem.children[2].innerHTML;
         currentScore = Number.parseInt(currentScore);
         elem.children[2].innerHTML = currentScore + 1;
         totalscore = totalscore + 1;
         elem19.children[2].innerHTML = totalscore;
     }
-  
-  
+
+    //over
     if (elem.children[2].innerHTML == 5) {
         elem.children[3].innerHTML = "1";
-    }  
-  else if (elem.children[2].innerHTML > 4 && elem.children[2].innerHTML<9) {
+        if (elem19.children[3].innerHTML == "-") {
+            elem19.children[3].innerHTML = 1;
+        }
+        elem19.children[2].inneHTML = overtotal += 1;
+    } else if (elem.children[2].innerHTML > 4 && elem.children[2].innerHTML < 9) {
         let currentover;
-        currentover = elem.children[2].innerHTML-elem.children[1].innerHTML;
+        currentover = elem.children[2].innerHTML - elem.children[1].innerHTML;
         elem.children[3].innerHTML = currentover;
+        if (currentover <= 4) {
+            overtotal = overtotal + 1;
+            elem19.children[3].innerHTML = overtotal;
+        }
     }
 }
 
@@ -345,13 +351,15 @@ function subt1(elem, elem19) {
         totalscore = totalscore - 1;
         elem19.children[2].innerHTML = totalscore;
     }
-  
-  
-  
-   if (elem.children[2].innerHTML >= 4 && elem.children[2].innerHTML<9) {
+
+
+
+    if (elem.children[2].innerHTML >= 4 && elem.children[2].innerHTML < 9) {
         let currentover;
-        currentover = elem.children[2].innerHTML-elem.children[1].innerHTML;
+        currentover = elem.children[2].innerHTML - elem.children[1].innerHTML;
+        overtotal = overtotal - 1;
         elem.children[3].innerHTML = currentover;
+        elem19.children[3].innerHTML = overtotal;
     }
 }
 /* your mission: 
