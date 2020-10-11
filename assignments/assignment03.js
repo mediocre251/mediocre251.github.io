@@ -391,14 +391,16 @@ function add1(elem, elem19) {
         elem19.children[2].innerHTML = totalscore;
     }
 
-    //over
+  //over
     if (elem.children[2].innerHTML == 5) {
-        elem.children[3].innerHTML = "1";
-        if (elem19.children[3].innerHTML == "-") {
+        elem.children[3].innerHTML = "0"; 
+      elem19.children[2].inneHTML = overtotal;
+    }
+        if (elem19.children[3].innerHTML == "-"&&elem.children[2].innerHTML==5) {
             elem19.children[3].innerHTML = 1;
-        }
-        elem19.children[2].inneHTML = overtotal += 1;
-    } else if (elem.children[2].innerHTML > "4"&&elem.children[3].innerHTML!=4) {
+        
+    } 
+  if (elem.children[2].innerHTML > "4"&&elem.children[3].innerHTML!=4) {
         let currentover;
         currentover = elem.children[2].innerHTML - elem.children[1].innerHTML;
         elem.children[3].innerHTML = currentover;
