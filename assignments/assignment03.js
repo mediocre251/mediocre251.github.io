@@ -371,14 +371,19 @@ var overtotal = 0;
 //adds 1
 function add1(elem, elem19) {
     if (elem.children[2].innerHTML == "-") {
-        elem.children[2].innerHTML = "1";
-
+        elem.children[2].innerHTML = "0";
+        
+        elem19.children[2].inneHTML = totalscore;
+    }
         if (elem19.children[2].innerHTML == "-") {
             elem19.children[2].innerHTML = "1";
         }
-        elem19.children[2].inneHTML = totalscore += 1;
+      
+       
         elem19.children[1].innerHTML = partotal;
-    } else if (elem.children[2].innerHTML < "8") {
+   //score
+  
+     if (elem.children[2].innerHTML < "8") {
         let currentScore = elem.children[2].innerHTML;
         currentScore = Number.parseInt(currentScore);
         elem.children[2].innerHTML = currentScore + 1;
@@ -440,7 +445,6 @@ function clearrow(elem, elem19) {
   elem.children[2].innerHTML="-";
   elem.children[3].innerHTML="-";
 }
-
 
 /* your mission: 
 
