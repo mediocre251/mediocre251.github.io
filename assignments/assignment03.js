@@ -360,6 +360,23 @@ function subt1(elem, elem19) {
         elem19.children[3].innerHTML = overtotal;
     }
 }
+
+function clearrow(elem, elem19) {
+  let curscore = elem.children[2].innerHTML;
+  let curover = elem.children[3].innerHTML;
+  if(curscore !="-"){
+     elem19.children[2].innerHTML=totalscore-curscore;
+     totalscore = totalscore - curscore;
+  }
+  if(curover !="-"){
+     elem19.children[3].innerHTML=overtotal-curover;
+     overtotal = overtotal - curover;
+  }
+  elem.children[2].innerHTML="-";
+  elem.children[3].innerHTML="-";
+}
+
+
 /* your mission: 
 
 1. Make all the + buttons add 1 to the score of the hole. Do not allow the score to exceed double the par. 
