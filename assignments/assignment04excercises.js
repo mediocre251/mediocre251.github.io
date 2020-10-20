@@ -1,11 +1,21 @@
 // 6. modify basic JS object, with "this" keyword
 let person = {
+  
+  //streetAddress, city, state, zipCode. Add method, fullAddress(), which prints full address on a single line
+  
+  streetAddress: "8989 whiskey road",
+  city: "Austin",
+  state: "Texas",
+  zipCode: "789789",
+  fullAddress: function(){return this.streetAddress + " " + this.city + " " + this.state + " " + this.zipCode},
   firstName: "Jane",
   lastName: "Doe",
   age: 45,
   fullName: function() {return this.firstName  + " " + person.lastName}
+  
 }
 document.getElementById("1A").innerHTML = person.fullName();
+document.getElementById("1B").innerHTML = person.fullAddress();
 
 // Instructions
 // modify person object, above, as follows
