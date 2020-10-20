@@ -84,6 +84,7 @@ function displayClubEntry() {
 }
 // navigate to "Distance Entry" screen (from one of the club "+" buttons)
 function displayClubDistanceEntryForm(c) {
+	let forundoing = c;
 	localStorage.setItem("club", c); // save chosen club
 	window.location.href = "clubDistanceEntry.html"; // redirect to entry form
 }
@@ -92,7 +93,38 @@ function displayClubDistanceEntryForm(c) {
 function undoLastShot() {
         // your code here !
 	let tblbody = document.getElementById('clubTable').children[0]; 
+	// create 2d global array, called "clubs" throughout app
+	// columns - 0: sortPosition, 1: clubAbbrev, 2: clubName, 
+	// 3: avgDist, 4: minDist, 5: maxDist, 6: numOfShots, 
+	// 7: loft/degrees, 8: typical/men, 9: typical/women
 	
+	if(displayClubDistanceEntryForm.forundoing==0){
+		let clubs = [
+			[ 199, "Dr",  "Driver",   0, 0, 0, 0, 10.5, 230, 200]
+		];	
+	}
+	
+	let clubs = [
+		[ 199, "Dr",  "Driver",   0, 0, 0, 0, 10.5, 230, 200],
+		[ 300, "3+w", "3+ wood",  0, 0, 0, 0, 13.5, 210, 180],
+		[ 350, "3h",  "3 hybrid", 0, 0, 0, 0, 18.0, 180, 160],
+		[ 599, "5i",  "5 iron",   0, 0, 0, 0, 21.0, 160, 140],
+		[ 699, "6i",  "6 iron",   0, 0, 0, 0, 24.0, 150, 130],
+		[ 799, "7i",  "7 iron",   0, 0, 0, 0, 27.0, 140, 120],
+		[ 899, "8i",  "8 iron",   0, 0, 0, 0, 31.5, 130, 110],
+		[ 999, "9i",  "9 iron",   0, 0, 0, 0, 36.0, 120, 100],
+		[1099, "Pw",  "Pitching", 0, 0, 0, 0, 41.0, 110,  90],
+		[1199, "Aw",  "Approach", 0, 0, 0, 0, 46.0, 100,  80],
+		[1299, "Gw",  "Gap",      0, 0, 0, 0, 51.0,  90,  70],
+		[1399, "Sw",  "Sand",     0, 0, 0, 0, 56.0,  80,  60],
+		[1499, "Lw",  "Lob",      0, 0, 0, 0, 60.0,  60,  40],
+		[1599, "Ptr", "Putter",   0, 0, 0, 0, 60.0,   3,   3],
+	];
+	// store the array in local storage
+	let str = JSON.stringify(clubs);
+	localStorage.setItem("clubs", str);
+	// and refresh screen
+	window.location.href = "clubDistanceList.html"; 
 	
 	
 }
