@@ -47,8 +47,38 @@ appendTableRow5(table2b,"6","7","8","9","10");
 appendTableRow5(table2b,"11","12","13","14","15");
 appendTableRow5(table2b,"16","17","18","19","20");
 appendTableRow5(table2b,"21","22","23","24","25");
+table2b.children[0].children[0].children[0].style.border="solid #000000"
+table2b.children[0].children[1].children[0].style.border="solid #000000"
+table2b.children[0].children[2].children[0].style.border="solid #000000"
+table2b.children[0].children[3].children[0].style.border="solid #000000"
+table2b.children[0].children[4].children[0].style.border="solid #000000"
+
+table2b.children[0].children[0].children[1].style.border="solid #000000"
+table2b.children[0].children[1].children[1].style.border="solid #000000"
+table2b.children[0].children[2].children[1].style.border="solid #000000"
+table2b.children[0].children[3].children[1].style.border="solid #000000"
+table2b.children[0].children[4].children[1].style.border="solid #000000"
+
+table2b.children[0].children[0].children[2].style.border="solid #000000"
+table2b.children[0].children[1].children[2].style.border="solid #000000"
+table2b.children[0].children[2].children[2].style.border="solid #000000"
+table2b.children[0].children[3].children[2].style.border="solid #000000"
+table2b.children[0].children[4].children[2].style.border="solid #000000"
+
+table2b.children[0].children[0].children[3].style.border="solid #000000"
+table2b.children[0].children[1].children[3].style.border="solid #000000"
+table2b.children[0].children[2].children[3].style.border="solid #000000"
+table2b.children[0].children[3].children[3].style.border="solid #000000"
+table2b.children[0].children[4].children[3].style.border="solid #000000"
+
+table2b.children[0].children[0].children[4].style.border="solid #000000"
+table2b.children[0].children[1].children[4].style.border="solid #000000"
+table2b.children[0].children[2].children[4].style.border="solid #000000"
+table2b.children[0].children[3].children[4].style.border="solid #000000"
+table2b.children[0].children[4].children[4].style.border="solid #000000"
 
 function appendTableRow5 (tableobj, col1, col2, col3,col4,col5) {
+  document.getElementById("2B").children[0].style.border = "solid #000000";
   // create column (table division) DOM objects
   let td1 = document.createElement("td");
   let td2 = document.createElement("td");
