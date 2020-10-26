@@ -119,7 +119,7 @@ function appendTableRow5 (tableobj, col1, col2, col3,col4,col5) {
 let div3B = document.getElementById("3B");
 let table3B = createTable("table3B");
 div3B.appendChild(table3B);
-let p00 = 2;
+let p00 = 2;//try .innerText
 let p01 = 2;
 table3B.setAttribute("style", "border:1px solid black;")
 table3B.setAttribute("width", "100%")
