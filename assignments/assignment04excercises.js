@@ -47,35 +47,6 @@ appendTableRow5(table2b,"6","7","8","9","10");
 appendTableRow5(table2b,"11","12","13","14","15");
 appendTableRow5(table2b,"16","17","18","19","20");
 appendTableRow5(table2b,"21","22","23","24","25");
-table2b.children[0].children[0].children[0].style.border="solid #000000"
-table2b.children[0].children[1].children[0].style.border="solid #000000"
-table2b.children[0].children[2].children[0].style.border="solid #000000"
-table2b.children[0].children[3].children[0].style.border="solid #000000"
-table2b.children[0].children[4].children[0].style.border="solid #000000"
-
-table2b.children[0].children[0].children[1].style.border="solid #000000"
-table2b.children[0].children[1].children[1].style.border="solid #000000"
-table2b.children[0].children[2].children[1].style.border="solid #000000"
-table2b.children[0].children[3].children[1].style.border="solid #000000"
-table2b.children[0].children[4].children[1].style.border="solid #000000"
-
-table2b.children[0].children[0].children[2].style.border="solid #000000"
-table2b.children[0].children[1].children[2].style.border="solid #000000"
-table2b.children[0].children[2].children[2].style.border="solid #000000"
-table2b.children[0].children[3].children[2].style.border="solid #000000"
-table2b.children[0].children[4].children[2].style.border="solid #000000"
-
-table2b.children[0].children[0].children[3].style.border="solid #000000"
-table2b.children[0].children[1].children[3].style.border="solid #000000"
-table2b.children[0].children[2].children[3].style.border="solid #000000"
-table2b.children[0].children[3].children[3].style.border="solid #000000"
-table2b.children[0].children[4].children[3].style.border="solid #000000"
-
-table2b.children[0].children[0].children[4].style.border="solid #000000"
-table2b.children[0].children[1].children[4].style.border="solid #000000"
-table2b.children[0].children[2].children[4].style.border="solid #000000"
-table2b.children[0].children[3].children[4].style.border="solid #000000"
-table2b.children[0].children[4].children[4].style.border="solid #000000"
 
 function appendTableRow5 (tableobj, col1, col2, col3,col4,col5) {
   document.getElementById("2B").children[0].style.border = "solid #000000";
@@ -91,7 +62,11 @@ function appendTableRow5 (tableobj, col1, col2, col3,col4,col5) {
   td3.innerHTML = col3;
   td4.innerHTML = col4;
   td5.innerHTML = col5;
-
+  td1.setAttribute("Style","border:1px solid black;");
+  td2.setAttribute("Style","border:1px solid black;");
+  td3.setAttribute("Style","border:1px solid black;");
+  td4.setAttribute("Style","border:1px solid black;");
+  td5.setAttribute("Style","border:1px solid black;");
   // create table row DOM object
   let tr = document.createElement("tr");
   // append table divisions (columns) to table row
@@ -135,7 +110,7 @@ addrows(table3B,"item","price","qty","Price * Qty");
 addrows(table3B,"Thingamabob","1.00","1",p00*p10);
 addrows(table3B,"Whachamacallit","2.00","2",p01*p11);
 addrows(table3B,"Doohickey","3.00","3",p02*p12);
-addrows(table3B,"Totals:",p00+p01+p02,p10+p11+p12,p02*p12+p01*p11+p00*p10);
+addrows(table3B,"Totals:",p00+p01+p02+".00",p10+p11+p12,p02*p12+p01*p11+p00*p10);
 
 // append to tableobj a 3-column table row 
 function addrows (tableobj,coltop, col1, col2, col3, col4) {
@@ -150,7 +125,11 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
   td2.innerHTML = col2;
   td3.innerHTML = col3;
   td4.innerHTML = col4;
-
+  td0.setAttribute("Style","border:1px solid black;");
+  td1.setAttribute("Style","border:1px solid black;");
+  td2.setAttribute("Style","border:1px solid black;")
+  td3.setAttribute("Style","border:1px solid black;");
+  td4.setAttribute("Style","border:1px solid black;");
   // create table row DOM object
   let tr = document.createElement("tr");
   // append table divisions (columns) to table row
