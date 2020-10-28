@@ -98,12 +98,12 @@ div3B.appendChild(table3B);
 
 
 
-let p00 = parseInt(table3A.children[0].children[0].children[1].children[1].innerHTML);
-let p01 = parseInt(table3A.children[0].children[0].children[2].children[1].innerHTML);
-let p02 = parseInt(table3A.children[0].children[0].children[3].children[1].innerHTML);
-let p10 = parseInt(table3A.children[0].children[0].children[1].children[2].innerHTML);
-let p11 = parseInt(table3A.children[0].children[0].children[2].children[2].innerHTML);
-let p12 = parseInt(table3A.children[0].children[0].children[3].children[2].innerHTML);
+const p00 = parseInt(table3A.children[0].children[0].children[1].children[1].innerHTML);
+const p01 = parseInt(table3A.children[0].children[0].children[2].children[1].innerHTML);
+const p02 = parseInt(table3A.children[0].children[0].children[3].children[1].innerHTML);
+const p10 = parseInt(table3A.children[0].children[0].children[1].children[2].innerHTML);
+const p11 = parseInt(table3A.children[0].children[0].children[2].children[2].innerHTML);
+const p12 = parseInt(table3A.children[0].children[0].children[3].children[2].innerHTML);
 table3B.setAttribute("style", "border:1px solid black;");
 table3B.setAttribute("width", "100%");
 addrows(table3B,"item","price","qty","Price * Qty");
