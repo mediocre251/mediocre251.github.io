@@ -142,6 +142,7 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
     divs[4] = "errPassword";
     divs[5] = "errConfirm";
     // function: validate() ---------------------------------------------
+    // function: validate() ---------------------------------------------
     function validate() {
         // initialize input array
         var inputs = new Array();
@@ -163,9 +164,17 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
         for (i in inputs) {
             var errMessage = errors[i];
             var div = divs[i];
-            if (inputs[i] == "")
-                document.getElementById(div).innerHTML = errMessage;
-            else if (i == 2) {
+          
+          
+          if(inputs[0]!=0)
+            document.getElementById(divs[0]).innerHTML = "OK!";
+          
+          if(inputs[1]!=0)
+            document.getElementById(divs[1]).innerHTML = "OK!";
+          if(inputs[3]!=0)
+            document.getElementById(divs[3]).innerHTML = "OK!";
+ 
+            if (i == 2) {
                 var atpos = inputs[i].indexOf("@");
                 var dotpos = inputs[i].lastIndexOf(".");
                 if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= inputs[i].length)
@@ -173,7 +182,8 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
                       = "<span style='color: red'>Enter a valid email address!</span>";
                 else
                     document.getElementById(div).innerHTML = "OK!";
-            } else if (i == 5) {
+            } 
+          else if (i == 5&&inputs[5]!="") {
                 var first = document.getElementById('password').value;
                 var second = document.getElementById('confirm').value;
                 if (second != first)
@@ -181,8 +191,7 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
                       = "<span style='color: red'>Your passwords don't match!</span>";
                 else
                     document.getElementById(div).innerHTML = "OK!";
-            } else
-                document.getElementById(div).innerHTML = "OK!";
+            } 
         }
     }
     // function: finalValidate() ------------------------------------
