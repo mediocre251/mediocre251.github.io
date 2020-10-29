@@ -164,10 +164,11 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
         for (i in inputs) {
             var errMessage = errors[i];
             var div = divs[i];
-          
-          
-          if(inputs[0]!=0)
+      
+          if(inputs[0]!=""){
             document.getElementById(divs[0]).innerHTML = "OK!";
+          }
+          
           
           if(inputs[1]!=0)
             document.getElementById(divs[1]).innerHTML = "OK!";
@@ -185,22 +186,30 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
             } 
           else if (i == 5&&inputs[5]!="") {
                 var first = document.getElementById('password').value;
+                document.getElementById("errPassword").innerHTML="OK!";
+
                 var second = document.getElementById('confirm').value;
                 if (second != first)
                     document.getElementById('errConfirm').innerHTML 
                       = "<span style='color: red'>Your passwords don't match!</span>";
-                else
-                    document.getElementById(div).innerHTML = "OK!";
+                else 
+                  document.getElementById(div).innerHTML = "OK!";
             } 
         }
     }
+
     // function: finalValidate() ------------------------------------
     function finalValidate() {
         var count = 0;
         for (i = 0; i < 6; i++) {
             var div = divs[i];
-            if (document.getElementById(div).innerHTML == "OK!")
+            if (document.getElementById(div).innerHTML == "OK!"){
                 count = count + 1;
+            }
+            else{
+              document.getElementById(div).innerHTML = "<span style='color:red'>Please enter the proper value!</span>";
+            }
+            
         }
         if (count == 6)
             document.getElementById("errFinal").innerHTML 
