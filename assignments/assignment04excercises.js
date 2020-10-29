@@ -201,6 +201,13 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
 
     // function: finalValidate() ------------------------------------
     function finalValidate() {
+      var errors = new Array();
+        errors[0] = "<span style='color:red'>Please enter your first name!</span>";
+        errors[1] = "<span style='color:red'>Please enter your last name!</span>";
+        errors[2] = "<span style='color:red'>Please enter your email!</span>";
+        errors[3] = "<span style='color:red'>Please enter your user id!</span>";
+        errors[4] = "<span style='color:red'>Please enter your password!</span>";
+        errors[5] = "<span style='color:red'>Please confirm your password!</span>";
         var count = 0;
         for (i = 0; i < 6; i++) {
             var div = divs[i];
@@ -208,7 +215,7 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
                 count = count + 1;
             }
             else{
-              document.getElementById(div).innerHTML = "<span style='color:red'>Please enter the proper value!</span>";
+              document.getElementById(divs[i]).innerHTML = errors[i];
             }
             
         }
