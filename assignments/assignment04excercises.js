@@ -174,7 +174,7 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
             document.getElementById(divs[1]).innerHTML = "OK!";
           if(inputs[3]!=0)
             document.getElementById(divs[3]).innerHTML = "OK!";
- 
+          if(inputs[2]!=""){
             if (i == 2) {
                 var atpos = inputs[i].indexOf("@");
                 var dotpos = inputs[i].lastIndexOf(".");
@@ -184,7 +184,8 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
                 else
                     document.getElementById(div).innerHTML = "OK!";
             } 
-          else if (i == 5&&inputs[5]!="") {
+        }
+           if (i == 5&&inputs[5]!="") {
                 var first = document.getElementById('password').value;
                 document.getElementById("errPassword").innerHTML="OK!";
 
@@ -264,3 +265,4 @@ function createTable(id) {
   table.appendChild(tbody);
   return table;
 }
+
