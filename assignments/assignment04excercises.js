@@ -134,7 +134,8 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
 // 9. Refactor a non-object-oriented form
 <!-- code below is from: https://www.guru99.com/practical-code-examples-using-javascript.html -->
     // initialize error div id array
-    var divs = new Array();
+
+    const divs = new Array();
     divs[0] = "errFirst";
     divs[1] = "errLast";
     divs[2] = "errEmail";
@@ -145,7 +146,7 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
     // function: validate() ---------------------------------------------
     function validate() {
         // initialize input array
-        var inputs = new Array();
+        const inputs = new Array();
         inputs[0] = document.getElementById('first').value;
         inputs[1] = document.getElementById('last').value;
         inputs[2] = document.getElementById('email').value;
@@ -153,7 +154,7 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
         inputs[4] = document.getElementById('password').value;
         inputs[5] = document.getElementById('confirm').value;
         // initialize error array
-        var errors = new Array();
+        const errors = new Array();
         errors[0] = "<span style='color:red'>Please enter your first name!</span>";
         errors[1] = "<span style='color:red'>Please enter your last name!</span>";
         errors[2] = "<span style='color:red'>Please enter your email!</span>";
@@ -162,8 +163,8 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
         errors[5] = "<span style='color:red'>Please confirm your password!</span>";
         // update error array with error message
         for (i in inputs) {
-            var errMessage = errors[i];
-            var div = divs[i];
+            let errMessage = errors[i];
+            let div = divs[i];
       
           if(inputs[0]!=""){
             document.getElementById(divs[0]).innerHTML = "OK!";
@@ -176,8 +177,8 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
             document.getElementById(divs[3]).innerHTML = "OK!";
           if(inputs[2]!=""){
             if (i == 2) {
-                var atpos = inputs[i].indexOf("@");
-                var dotpos = inputs[i].lastIndexOf(".");
+                let atpos = inputs[i].indexOf("@");
+                let dotpos = inputs[i].lastIndexOf(".");
                 if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= inputs[i].length)
                     document.getElementById('errEmail').innerHTML 
                       = "<span style='color: red'>Enter a valid email address!</span>";
@@ -186,7 +187,7 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
             } 
         }
            if (i == 5&&inputs[5]!="") {
-                var first = document.getElementById('password').value;
+                let first = document.getElementById('password').value;
                 document.getElementById("errPassword").innerHTML="OK!";
 
                 var second = document.getElementById('confirm').value;
@@ -201,7 +202,7 @@ function addrows (tableobj,coltop, col1, col2, col3, col4) {
 
     // function: finalValidate() ------------------------------------
     function finalValidate() {
-      var errors = new Array();
+      let errors = new Array();
         errors[0] = "<span style='color:red'>Please enter your first name!</span>";
         errors[1] = "<span style='color:red'>Please enter your last name!</span>";
         errors[2] = "<span style='color:red'>Please enter your email!</span>";
