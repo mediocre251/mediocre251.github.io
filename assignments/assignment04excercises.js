@@ -138,8 +138,8 @@ function addrows(tableobj, coltop, col1, col2, col3, col4) { //begin function fo
 // in table3B, add a column, "Price * Qty", and use JS to compute the correct values to put in the column
 // add to table03B a "totals" row which gives the "grand total" of all numbers in the "Price * Qty" column
 // 9. Refactor a non-object-oriented form
-<
-!--code below is from: https: //www.guru99.com/practical-code-examples-using-javascript.html -->
+
+//!--code below is from: https: //www.guru99.com/practical-code-examples-using-javascript.html -->
     // initialize error div id array
 
     const divs = new Array(); //changed value to const as it never changes
