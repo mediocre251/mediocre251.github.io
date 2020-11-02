@@ -95,7 +95,7 @@ function loadContent() {
             "TotalConfirmed": c.TotalConfirmed,
             "TotalDeaths":c.TotalDeath,
             "Population":populations[c.slug],
-            
+            "TotalConfirmedPer100000":100000*c.TotalConfirmed/populations[c.slug]
           });
         }
       }
