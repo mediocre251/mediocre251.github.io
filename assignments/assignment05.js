@@ -87,7 +87,7 @@ function loadContent() {
 	    
       
       for (let c of covidJsObj.Countries) {
-        if (c.NewConfirmed > 300000) {
+        if (c.NewConfirmed > 30000) {
           newConfirmedOver1000.push({ 
             "Slug": c.Slug, 
             "NewConfirmed": c.NewConfirmed, 
