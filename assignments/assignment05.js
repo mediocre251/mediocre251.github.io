@@ -78,14 +78,24 @@ function loadContent() {
       
       covidJson = this.responseText;
       covidJsObj = JSON.parse(covidJson);
+      
+      
+      
+      //initialize empty array of objects
       newConfirmedOver1000 = [];
       
-	    for (let c of covidJsObj.Countries) {
+	    
+      
+      for (let c of covidJsObj.Countries) {
         if (c.NewConfirmed > 10000) {
           newConfirmedOver1000.push({ 
             "Slug": c.Slug, 
             "NewConfirmed": c.NewConfirmed, 
-            "NewDeaths": c.NewDeaths
+            "NewDeaths": c.NewDeaths,
+            "TotalConfirmed": c.TotalConfirmed,
+            "TotalDeaths":c.TotalDeath,
+            "Population":populations[c.slug],
+            
           });
         }
       }
