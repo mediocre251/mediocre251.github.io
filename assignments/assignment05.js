@@ -87,7 +87,7 @@ function loadContent() {
 	    
       
       for (let c of covidJsObj.Countries) {
-        if (c.NewConfirmed > 10000) {
+        if (c.NewConfirmed  > 50000) {
           newConfirmedOver1000.push({ 
             "Slug": c.Slug, 
             "NewConfirmed": c.NewConfirmed, 
@@ -99,6 +99,8 @@ function loadContent() {
           });
         }
       }
+      
+      newConfirmedOver1000 = _.orderBy(newConfirmedOver1000,'TotalConfirmedPer100000','desc');
 
       chartData.data.datasets[0].backgroundColor 
         = "rgba(100,100,100,0.4)"; // gray
@@ -232,3 +234,4 @@ var populations = {
 'austria' : 8915382,
 'switzerland' : 8632703,
 }
+loadContent();
