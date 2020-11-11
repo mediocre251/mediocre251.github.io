@@ -93,7 +93,7 @@ function loadContent() {
             "NewConfirmed": c.NewConfirmed, 
             "NewDeaths": c.NewDeaths,
             "TotalConfirmed": c.TotalConfirmed,
-            "TotalDeaths":c.TotalDeath,
+            "TotalDeaths":c.TotalDeaths,
             "Population":populations[c.slug],
             "TotalConfirmedPer100000":100000*c.TotalConfirmed/populations[c.slug]
           });
