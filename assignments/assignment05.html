@@ -24,13 +24,7 @@
     <script src="https://mediocre251.github.io/assignments/assignment05.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-    var today = new Date();
-    var month = today.getMonth()+1;
-    var day = today.getDate();
-    var year = today.getFullYear();
-    
-    $("h4").text("Covid 19 cases as of "+month+" "+day+" "+year);
-  
+    $("h4").text("covid 19 hotspots as of "+dayjs('2020-11-25').format('MMMM/DD/YYYY'));
   </script>
 
 </body>  
