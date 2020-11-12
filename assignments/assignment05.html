@@ -1,4 +1,5 @@
 <body>
+  <h4></h4>
     <p>"The COVID-19 pandemic, also known as the coronavirus pandemic is an ongoing pandemic of coronavirus disaease 2019 (COVID-19) cauded by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), first identified in December 2019 in Wuhan, China."(<a href="https://en.wikipedia.org/wiki/COVID-19_pandemic">Wikipedia</a>)</p>
 
 <h2>Example Chart using Chart.js</h2>
@@ -21,5 +22,15 @@
   console.log(dayjs().format("YYYY-MM-DD"));
 </script>
     <script src="https://mediocre251.github.io/assignments/assignment05.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    var today = new Date();
+    var month = today.getMonth()+1;
+    var day = today.getDate();
+    var year = today.getFullYear();
+    
+    $("h4").text("Covid 19 cases as of "+month+" "+day+" "+year);
+  
+  </script>
 
 </body>  
