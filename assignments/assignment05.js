@@ -124,7 +124,7 @@ function loadContent() {
       chartData.data.datasets[1].data  
         = newConfirmedOver1000.map( 
           (x) => x.TotalDeaths );
-      chartData.data.datasets[2].data=newConfirmedOver1000.map((x)=>x.TotalConfirmedPer100000)
+      chartData.data.datasets[2].data=newConfirmedOver1000.map((x)=>x.TotalConfirmedPer100000);
       chartData.options.title.text 
         = "Covid 19 Hotspots (" + 
         dayjs().format("YYYY-MM-DD") + ")" ;
