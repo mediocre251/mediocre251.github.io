@@ -110,20 +110,24 @@ function loadContent() {
         = "rgba(100,100,100,0.4)"; // gray
       chartData.data.datasets[1].backgroundColor 
         = "rgba(255,0,0,0.4)"; // red
+      chartData.data.datasets[2].backgroundColor="rgba(0,0,255,.4)";
       chartData.data.datasets[0].label  
-        = 'new cases';
+        = 'Total Confirmed';
       chartData.data.datasets[1].label  
-        = 'new deaths';
+        = 'Total Deaths';
+      chartData.data.datasets[2].label='Total Confirmed Per 100000';
       chartData.data.labels  
         = newConfirmedOver1000.map( (x) => x.Slug );
       chartData.data.datasets[0].data  
         = newConfirmedOver1000.map( 
-          (x) => x.NewConfirmed );
+          (x) => x.TotalConfirmed );
       chartData.data.datasets[1].data  
         = newConfirmedOver1000.map( 
-          (x) => x.NewDeaths );
+          (x) => x.TotalDeaths );
+      chartData.data.datasets[2].data=newConfirmedOver1000.map((x)=>x.TotalConfirmedPer100000)
       chartData.options.title.text 
-        = "Covid 19 Hotspots " ;
+        = "Covid 19 Hotspots (" + 
+        dayjs().format("YYYY-MM-DD") + ")" ;
       myChart = new Chart(ctx, chartData); 
 
     } // end if
