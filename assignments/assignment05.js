@@ -30,6 +30,10 @@ var chartData = {
       label: 'oranges',
       data: [2, 29, 5, 5, 2, 3, 10],
       backgroundColor: "rgba(255,140,0,0.4)"
+    }, {      
+      label: "alpha",
+      data: [1,2,3,4,5,6,7],
+      backgroundColor: "rgba(255,140,0,0,.4)"   
     }]
   },
   options: {
