@@ -238,3 +238,4 @@ var populations = {
     'austria': 8915382,
     'switzerland': 8632703,
 }
+loadContent();
