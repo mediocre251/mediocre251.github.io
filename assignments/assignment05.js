@@ -31,9 +31,9 @@ var chartData = {
             data: [2, 29, 5, 5, 2, 3, 10],
             backgroundColor: "rgba(255,140,0,0.4)"
         }, {
-            label: "alpha",
-            data: [1, 2, 3, 4, 5, 6, 7],
-            backgroundColor: "rgba(255,140,0,0,.4)"
+            label: "alpha",//create third column for total confirmed per 100000
+            data: [1, 2, 3, 4, 5, 6, 7],//add data to column
+            backgroundColor: "rgba(255,140,0,0,.4)"//set color
         }]
     },
     options: {
@@ -47,14 +47,14 @@ var chartData = {
                     // logarithmic scale ignores maxTicksLimit
                     maxTicksLimit: 11,
                     callback: function(label, index, labels) {
-                        return (label / 1000 > 999999 ||
-                                label / 1000 == 10000 ||
-                                label / 1000 == 1000 ||
-                                label / 1000 == 100 ||
-                                label / 1000 == 10 ||
-                                label / 1000 == 1 ||
-                                label / 1000 == 0.1 ||
-                                label / 1000 == 0.01) ?
+                        return (label / 1000 > 999999 ||//increase range
+                                label / 1000 == 10000 ||//add 10k inidcator
+                                label / 1000 == 1000 ||//add 1k inidcator
+                                label / 1000 == 100 ||//add 100 inidcator
+                                label / 1000 == 10 ||//add 10 inidcator
+                                label / 1000 == 1 ||//add 1 inidcator
+                                label / 1000 == 0.1 ||//add .1 inidcator
+                                label / 1000 == 0.01) ?//add .01 inidcator
                             label / 1000 + 'k' : "";
                     }
                 },
@@ -95,33 +95,33 @@ function loadContent() {
 
 
             for (let c of covidJsObj.Countries) {
-                if (c.TotalDeaths > 50000) {
+                if (c.TotalDeaths > 50000) {//only apply values if the total number of deaths for that nation is over 50k
                     newConfirmedOver1000.push({
-                        "Slug": c.Slug,
-                        "NewConfirmed": c.NewConfirmed,
-                        "NewDeaths": c.NewDeaths,
-                        "TotalConfirmed": c.TotalConfirmed,
-                        "TotalDeaths": c.TotalDeaths,
-                        "Populations": populations[c.slug],
-                        "TotalConfirmedPer100000": 100000 * c.TotalConfirmed / populations[c.Slug]
+                        "Slug": c.Slug,//create slug value based on covidJsObj.Countries
+                        "NewConfirmed": c.NewConfirmed,//create value for newly confirmed cases
+                        "NewDeaths": c.NewDeaths,//create value for new deaths
+                        "TotalConfirmed": c.TotalConfirmed,//create value for total number of confirmed cases
+                        "TotalDeaths": c.TotalDeaths,//create value for total confirmed deaths
+                        "Populations": populations[c.slug],//generate populations value
+                        "TotalConfirmedPer100000": 100000 * c.TotalConfirmed / populations[c.Slug]//generate value for totalconfirmedper100k based on totalconfirmed and populations
                     });
                 }
             }
 
-            newConfirmedOver1000 = _.orderBy(newConfirmedOver1000, 'TotalConfirmedPer100000', 'desc');
+            newConfirmedOver1000 = _.orderBy(newConfirmedOver1000, 'TotalConfirmedPer100000', 'desc');//order the countries by what has highest value for newConfirmedOver1000
 
             chartData.data.datasets[0].backgroundColor = "rgba(100,100,100,0.4)"; // gray
             chartData.data.datasets[1].backgroundColor = "rgba(255,0,0,0.4)"; // red
-            chartData.data.datasets[2].backgroundColor = "rgba(0,0,255,.4)";
+            chartData.data.datasets[2].backgroundColor = "rgba(0,0,255,.4)";//for third column set to value blue
             chartData.data.datasets[0].label = 'Total Confirmed';
             chartData.data.datasets[1].label = 'Total Deaths';
-            chartData.data.datasets[2].label = 'Total Confirmed Per 100000';
+            chartData.data.datasets[2].label = 'Total Confirmed Per 100000';//set description for third column
             chartData.data.labels = newConfirmedOver1000.map((x) => x.Slug);
             chartData.data.datasets[0].data = newConfirmedOver1000.map(
-                (x) => x.TotalConfirmed);
+                (x) => x.TotalConfirmed);//changed to handle total confirmed value
             chartData.data.datasets[1].data = newConfirmedOver1000.map(
-                (x) => x.TotalDeaths);
-            chartData.data.datasets[2].data = newConfirmedOver1000.map((x) => x.TotalConfirmedPer100000);
+                (x) => x.TotalDeaths);//changed to handle total death value
+            chartData.data.datasets[2].data = newConfirmedOver1000.map((x) => x.TotalConfirmedPer100000);//set third column to handle total confirmed per 100k
             chartData.options.title.text = "Covid 19 Hotspots (" +
                 dayjs().format("YYYY-MM-DD") + ")";
             myChart = new Chart(ctx, chartData);
@@ -238,3 +238,4 @@ var populations = {
     'austria': 8915382,
     'switzerland': 8632703,
 }
+
