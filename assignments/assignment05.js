@@ -79,16 +79,14 @@ var chartData = {
 // https://www.w3schools.com/js/js_ajax_intro.asp
 
 function loadContent() {
-    xhttp = new XMLHttpRequest();
+    let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 &&
             this.status == 200) {
-
+          
             covidJson = this.responseText;
             covidJsObj = JSON.parse(covidJson);
-
-
-
+          
             //initialize empty array of objects
             newConfirmedOver1000 = [];
 
@@ -129,7 +127,7 @@ function loadContent() {
         } // end if
 
     }; // end xhttp.onreadystatechange = function()
-
+    let URL="https://api.covid19api.com/summary";
     xhttp.open("GET", URL, true);
     xhttp.send();
 
