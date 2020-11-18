@@ -121,7 +121,7 @@ function loadContent() {
                 (x) => x.TotalDeaths);//changed to handle total death value
             chartData.data.datasets[2].data = newConfirmedOver1000.map((x) => x.TotalConfirmedPer100000);//set third column to handle total confirmed per 100k
             chartData.options.title.text = "Covid 19 Hotspots (" +
-                dayjs().format("YYYY-MM-DD") + ")";
+                dayjs().format("MMMM-DD-YYYY") + ")";
             myChart = new Chart(ctx, chartData);
 
         } // end if
