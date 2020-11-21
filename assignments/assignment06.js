@@ -83,16 +83,17 @@
           return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
       }
 
-      function updateLoansArray() {
-
-          let regex = /[0-9]/;
-          if (regex.test(parseInt($("#loan_year01").val()))) {
-
-              for (var i = 1; i < 5; i++) {
-                  loans[i].loan_year = loans[0].loan_year + i;
-                  $("#loan_year0" + (i + 1)).val(loans[i].loan_year);
-              }
-          } else {
-              alert("improper value entered in year field");
-          }
+function updateLoansArray() {
+  
+  let regex = /[0-9]/;
+if (regex.test(parseInt($("#loan_year01").val()))) {
+  loans[0].loan_year = parseInt($("#loan_year01").val());
+  for(var i=1; i<5; i++) {
+    loans[i].loan_year = loans[0].loan_year + i;
+    $("#loan_year0"+ (i+1) ).val(loans[i].loan_year);
+  }
+}
+ else {
+      alert("improper value entered in year field");
       }
+}
