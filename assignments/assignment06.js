@@ -86,7 +86,6 @@
       function updateLoansArray() {
 
           let regex = /[0-9]/;
-          loans[0].loan_year = parseInt($("#loan_year01").val());
           if (regex.test(parseInt($("#loan_year01").val()))) {
 
               for (var i = 1; i < 5; i++) {
