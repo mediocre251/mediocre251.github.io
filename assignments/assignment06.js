@@ -111,6 +111,9 @@ function updateLoansArray() {
  else{
    alert("improper value entered in Interest Rate field");
  }
+  loans[0].loan_amount = parseInt($("#loan_amt01").val());
   
+  document.getElementById("loan_bal01").innerHTML =($("#loan_amt01").val()*$("#int_amt01").val());
+   
 }
 
