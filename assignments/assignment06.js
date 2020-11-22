@@ -48,12 +48,12 @@
           // pre-fill defaults for other loan years
            for (var i = 2; i < 6; i++) {
               $("#loan_year0" + i).value = defaultYear++;
-              $("#loan_year0" + i).disabled = true;
+              $("#loan_year0" + i).attr("disabled", "disabled");
               $("#loan_year0" + i).css("background-color","grey");
               $("#loan_year0" + i).css("color","white");
               $("#loan_amt0" + i).value = defaultLoanAmount.toFixed(2);
               $("#loan_int0" + i).value = defaultInterestRate;
-              $("#loan_int0" + i).disabled = true;
+              $("#loan_int0" + i).attr("disabled", "disabled");
               $("#loan_int0" + i).css("color","white");
               $("#loan_int0" + i).css("background-color","grey");
               loanWithInterest = (loanWithInterest + defaultLoanAmount) * (1 + defaultInterestRate);
@@ -75,6 +75,10 @@
           $("#loan_year01").blur(function() {
               updateLoansArray();
           });
+          
+          $("#loan_int01").blur(function() {
+            updateLoansArray();
+          });
 
           // end: function loadDoc()
       });
@@ -84,16 +88,29 @@
       }
 
 function updateLoansArray() {
-  
   let regex = /[0-9]/;
-if (regex.test(parseInt($("#loan_year01").val()))) {
-  loans[0].loan_year = parseInt($("#loan_year01").val());
-  for(var i=1; i<5; i++) {
-    loans[i].loan_year = loans[0].loan_year + i;
-    $("#loan_year0"+ (i+1) ).val(loans[i].loan_year);
+  if (regex.test(parseInt($("#loan_year01").val()))) {
+    loans[0].loan_year = parseInt($("#loan_year01").val());
+    for(var i=1; i<5; i++) {
+     loans[i].loan_year = loans[0].loan_year + i;
+     $("#loan_year0"+ (i+1) ).val(loans[i].loan_year);
+   }
   }
+  else {
+    alert("improper value entered in year field");
+  }
+  
+  
+ if(regex.test(parseInt($("#loan_int01").val()))) {
+    loans[0].loan_int_rate = parseInt($("#loan_int01").val());
+    for(var i=1.0; i<5; i++) {
+     loans[i].loan_int_rate = loans[0].loan_int_rate + i;
+     $("#loan_int0"+ (i+1) ).val(loans[i].loan_int_rate);
+   }
+ }
+ else{
+   alert("improper value entered in Interest Rate field");
+ }
+  
 }
- else {
-      alert("improper value entered in year field");
-      }
-}
+
