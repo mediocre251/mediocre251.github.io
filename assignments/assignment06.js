@@ -1,4 +1,4 @@
-      // --- global variables ---
+    // --- global variables ---
 
       //var myTab = document.getElementById('loan_table');
       //alert(myTab.rows[1].cells[0].innerHTML);
@@ -37,27 +37,25 @@
 
           // pre-fill defaults for first loan year
           var defaultYear = loans[0].loan_year;
-          $("loan_year0" + 1).value = defaultYear++;
+          $("#loan_year0" + 1).value = defaultYear++;
           var defaultLoanAmount = loans[0].loan_amount;
-          $("loan_amt0" + 1).value = defaultLoanAmount.toFixed(2);
+          $("#loan_amt0" + 1).value = defaultLoanAmount.toFixed(2);
           var defaultInterestRate = loans[0].loan_int_rate;
-          $("loan_int0" + 1).value = defaultInterestRate;
+          $("#loan_int0" + 1).value = defaultInterestRate;
           var loanWithInterest = loans[0].loan_amount * (1 + loans[0].loan_int_rate);
-          $("loan_bal0" + 1).innerHTML = toComma(loanWithInterest.toFixed(2));
+          $("#loan_bal0" + 1).innerHTML = toComma(loanWithInterest.toFixed(2));
 
           // pre-fill defaults for other loan years
            for (var i = 2; i < 6; i++) {
-              $("#loan_year0" + i).value = defaultYear++;
-              $("#loan_year0" + i).attr("disabled", "disabled");
-              $("#loan_year0" + i).css("background-color","grey");
-              $("#loan_year0" + i).css("color","white");
-              $("#loan_amt0" + i).value = defaultLoanAmount.toFixed(2);
-              $("#loan_int0" + i).value = defaultInterestRate;
-              $("#loan_int0" + i).attr("disabled", "disabled");
-              $("#loan_int0" + i).css("color","white");
-              $("#loan_int0" + i).css("background-color","grey");
+              $("#loan_year0${i}").value(defaultYear++);
+              $("#loan_year0${i}").attr("disabled", "true");
+              $("#loan_year0${i}").css({"background-color":"grey","color":"white"});
+              $("#loan_amt0${i}").value(defaultLoanAmount.toFixed(2));
+              $("#loan_int0${i}").value(defaultInterestRate);
+              $("#loan_int0${i}").attr("disabled", "true");
+              $("#loan_int0${i}").css({"background-color":"grey","color":"white"});
               loanWithInterest = (loanWithInterest + defaultLoanAmount) * (1 + defaultInterestRate);
-              $("#loan_bal0" + i).innerHTML = toComma(loanWithInterest.toFixed(2));
+              $("#loan_bal0" + i).text(toMoney(loanWithInterest));
           } // end: "for" loop
 
 
@@ -68,17 +66,11 @@
           });
           $("input[type=text]").blur(function() {
               $(this).css("background-color", "white");
+            updateLoansArray();
           });
 
           // set focus to first year: messes up codepen
           // $("#loan_year01").focus();
-          $("#loan_year01").blur(function() {
-              updateLoansArray();
-          });
-          
-          $("#loan_int01").blur(function() {
-            updateLoansArray();
-          });
 
           // end: function loadDoc()
       });
@@ -87,21 +79,18 @@
           return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
       }
 
+      let toMoney = (value) => {
+         return `\$${toComma(value.toFixed(2))}`; 
+      }
+
 function updateLoansArray() {
   let regex = /[0-9]/;
-  if (regex.test(parseInt($("#loan_year01").val()))) {
+  if (regex.test(parseInt($("#loan_year01").val()))||regex.test(parseInt($("#loan_int01").val()))) {
     loans[0].loan_year = parseInt($("#loan_year01").val());
     for(var i=1; i<5; i++) {
      loans[i].loan_year = loans[0].loan_year + i;
      $("#loan_year0"+ (i+1) ).val(loans[i].loan_year);
-   }
-  }
-  else {
-    alert("improper value entered in year field");
-  }
-  
-  
- if(regex.test(parseInt($("#loan_int01").val()))) {
+   }  
     loans[0].loan_int_rate = parseInt($("#loan_int01").val());
     for(var i=1.0; i<5; i++) {
      loans[i].loan_int_rate = loans[0].loan_int_rate + i;
@@ -116,4 +105,3 @@ function updateLoansArray() {
   document.getElementById("loan_bal01").innerHTML =($("#loan_amt01").val()*$("#int_amt01").val());
    
 }
-
