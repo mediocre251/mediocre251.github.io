@@ -1,4 +1,4 @@
-    // --- global variables ---
+         // --- global variables ---
 
       //var myTab = document.getElementById('loan_table');
       //alert(myTab.rows[1].cells[0].innerHTML);
@@ -37,13 +37,13 @@
 
           // pre-fill defaults for first loan year
           var defaultYear = loans[0].loan_year;
-          $("#loan_year0" + 1).value = defaultYear++;
+          $("loan_year0" + 1).value = defaultYear++;
           var defaultLoanAmount = loans[0].loan_amount;
-          $("#loan_amt0" + 1).value = defaultLoanAmount.toFixed(2);
+          $("loan_amt0" + 1).value = defaultLoanAmount.toFixed(2);
           var defaultInterestRate = loans[0].loan_int_rate;
-          $("#loan_int0" + 1).value = defaultInterestRate;
+          $("loan_int0" + 1).value = defaultInterestRate;
           var loanWithInterest = loans[0].loan_amount * (1 + loans[0].loan_int_rate);
-          $("#loan_bal0" + 1).innerHTML = toComma(loanWithInterest.toFixed(2));
+          $("loan_bal0" + 1).innerHTML = toComma(loanWithInterest.toFixed(2));
 
           // pre-fill defaults for other loan years
            for (var i = 2; i < 6; i++) {
@@ -87,21 +87,29 @@
 
 function updateLoansArray() {
   let regex = /[0-9]/;
-  if (regex.test(parseInt($("#loan_year01").val()))||regex.test(parseInt($("#loan_int01").val()))) {
+  let keepery = false;
+  let keeperi = false;
+  if (regex.test(parseInt($("#loan_year01").val()))) {
+    keepery=true;
+  }
+  if (regex.test(parseInt($("#loan_int01").val()))) {
+    keeperi=true;
+  }
+if(keepery==true&&keeperi==true){
     loans[0].loan_year = parseInt($("#loan_year01").val());
     for(var i=1; i<5; i++) {
      loans[i].loan_year = loans[0].loan_year + i;
      $("#loan_year0"+ (i+1) ).val(loans[i].loan_year);
    }  
-    loans[0].loan_int_rate = parseInt($("#loan_int01").val());
-    for(var i=1.0; i<5; i++) {
-     loans[i].loan_int_rate = loans[0].loan_int_rate + i;
-     $("#loan_int0"+ (i+1) ).val(loans[i].loan_int_rate);
+    
+    let interest = parseFloat($("#loan_int01").val());
+    for(let i=1; i<5; i++) {
+     loans[i].loan_int_rate = interest;
+     $(`#loan_int0${i}`).val(loans[i-1].loan_int_rate);
+     //$("#loan_int0"+ (i+1) ).val(loans[0].loan_int_rate);
    }
- }
- else{
-   alert("improper value entered in Interest Rate field");
- }
+}
+
   loans[0].loan_amount = parseInt($("#loan_amt01").val());
   
   document.getElementById("loan_bal01").innerHTML =($("#loan_amt01").val()*$("#int_amt01").val());
