@@ -47,15 +47,17 @@
 
           // pre-fill defaults for other loan years
            for (var i = 2; i < 6; i++) {
-              $("#loan_year0${i}").value(defaultYear++);
-              $("#loan_year0${i}").attr("disabled", "true");
-              $("#loan_year0${i}").css({"background-color":"grey","color":"white"});
-              $("#loan_amt0${i}").value(defaultLoanAmount.toFixed(2));
-              $("#loan_int0${i}").value(defaultInterestRate);
-              $("#loan_int0${i}").attr("disabled", "true");
-              $("#loan_int0${i}").css({"background-color":"grey","color":"white"});
+              $("#loan_year0" + i).value = defaultYear++;
+              $("#loan_year0" + i).attr("disabled", "true");
+              $("#loan_year0" + i).css({"background-color":"grey","color":"white"});
+              $("#loan_year0" + i).css("color","white");
+              $("#loan_amt0" + i).value = defaultLoanAmount.toFixed(2);
+              $("#loan_int0" + i).value = defaultInterestRate;
+              $("#loan_int0" + i).attr("disabled", "true");
+              $("#loan_int0" + i).css({"background-color":"grey","color":"white"});
+              $("#loan_int0" + i).css("background-color","grey");
               loanWithInterest = (loanWithInterest + defaultLoanAmount) * (1 + defaultInterestRate);
-              $("#loan_bal0" + i).text(toMoney(loanWithInterest));
+              $("#loan_bal0" + i).innerHTML = toComma(loanWithInterest.toFixed(2));
           } // end: "for" loop
 
 
