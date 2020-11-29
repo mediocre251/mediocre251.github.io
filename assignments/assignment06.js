@@ -41,8 +41,7 @@ $(document).ready(function() {
   $("#loan_amt0"+1).val(defaultLoanAmount.toFixed(2));//swapped document.getElementById to $ and using # to find the ID
   var defaultInterestRate=loans[0].loan_int_rate;
   $("#loan_int0"+1).val(defaultInterestRate);//swapped document.getElementById to $ and using # to find the ID
-  var loanWithInterest 
-   =loans[0].loan_amount*(1+loans[0].loan_int_rate);
+  var loanWithInterest =loans[0].loan_amount*(1+loans[0].loan_int_rate);
   $("#loan_bal0"+1).text(toMoney(loanWithInterest));//swapped document.getElementById to $ and using # to find the ID
     
   // pre-fill defaults for other loan years which has been modified to function with jquery
@@ -108,78 +107,35 @@ function updateLoansArray() {
   }
 
   if(tracker) {//if all previous operations pass with flying colors execute follwing action
-    loans[0].loan_year = parseInt($("#loan_year01").val());
-    for(var i=1; i<5; i++) {
-      loans[i].loan_year = loans[0].loan_year + i;
-    }
-    for(i = 1; i<6; i++){
-      let amt = parseFloat($(`#loan_amt0${i}`).val()).toFixed(2);
-      loans[i-1].loan_amount = amt;
-    }
-    let rate = parseFloat($("#loan_int01").val());
-    for(i=0; i<5; i++){
-      loans[i].loan_int_rate = rate;
+    loans[0].loan_year = parseInt($("#loan_year01").val());//pass the year value from the input box
+    for(var i=1; i<5; i++) {//loop for the rest ofthe input field
+      loans[i].loan_year=loans[0].loan_year + i;//apply value to loans adding i for proper input
     }
     
-    updateForm();
+    for(i = 1; i<6; i++){//loop for entirety of amount field to save values
+      let amount = parseFloat($(`#loan_amt0${i}`).val()).toFixed(2);//pass the float value as it is a decimal value technically
+      loans[i-1].loan_amount=amount;//save value to loans array.
+    }
     
-  } // end: if
-  
-} // end: function updateLoansArray()
-
-// -------------------------------------------------------
-let updateForm = () => {
-  loanWithInterest = 0;
-  let totalAmt = 0;
-  for(i = 1; i < 6; i++) {
-    $(`#loan_year0${i}`).val(loans[i - 1].loan_year);
-    let amt = loans[i - 1].loan_amount;
-    $(`#loan_amt0${i}`).val(amt);
-    totalAmt += parseFloat(amt);
-    $(`#loan_int0${i}`).val(loans[i - 1].loan_int_rate);
-    loanWithInterest 
-      = (loanWithInterest + parseFloat(amt)) 
-      * (1 + loans[0].loan_int_rate);
-    $("#loan_bal0" + i).text(toMoney(loanWithInterest));
+    let interestrate = parseFloat($("#loan_int01").val());//generate interest rate value
+    for(i=0; i<5; i++){//loop for interest rate field
+      loans[i].loan_int_rate = interestrate;//save interest rate to loans
+    }
+    
+    
+  loanWithInterest = 0;//initialize loanwithinterest
+  let totalloan = 0;//create and initialize the totalloan value
+  for(i = 1; i < 6; i++) {//loop for entire field
+    $(`#loan_year0${i}`).val(loans[i-1].loan_year);//change the value of the entirety of the loan_year field based on values stored in loans
+    let loaned=loans[i-1].loan_amount;//create and initialize loaned variable
+    $(`#loan_amt0${i}`).val(loaned);//pull the loaned amount
+    totalloan += parseFloat(loaned);//accumulate total amount loaned
+    $(`#loan_int0${i}`).val(loans[i - 1].loan_int_rate);//pull integer value
+    loanWithInterest=(loanWithInterest + parseFloat(loaned))*(1 + loans[0].loan_int_rate);//calculate the total loaned value with interest
+    $("#loan_bal0" + i).text(toMoney(loanWithInterest));//apply value of loanwithinterest
   }
-  int = loanWithInterest - totalAmt;
-  $(`#loan_int_accrued`).text(toMoney(int));
-  
-} // end: function updateForm()
-  
-
-// ----- ANGULAR -----
-
-var app = angular.module("myApp", []);
-
-app.controller("myCtrl", function($scope) {
-  $scope.payments = [];
-  $scope.populate = function () {
-    
-    updateForm();
-    
-    let total = loanWithInterest;
-    let iRate = loans[0].loan_int_rate;
-    let r = iRate / 12;
-    let n = 11;
-    //loan payment formula
-    //https://www.thebalance.com/loan-payment-calculations-315564
-    let pay = 12 * (total / ((((1+r)**(n*12))-1)/(r *(1+r)**(n*12))));
-    for (let i = 0; i < 10; i++) {
-      total -= pay 
-      let int = total * (iRate); 
-      $scope.payments[i] = {
-        "year":loans[4].loan_year + i + 1,
-        "payment": toMoney(pay), 
-        "amt": toMoney(int),
-        "ye": toMoney(total += int)
-      }
-    }
-    $scope.payments[10] = {
-      "year":loans[4].loan_year + 11,
-      "payment": toMoney(total),
-      "amt": toMoney(0),
-      "ye":toMoney(0)
-    }
+  let totalamountowed=loanWithInterest-totalloan;
+  $(`#loan_int_accrued`).text(toMoney(totalamountowed));//apply value for total interest collected over college career
   }
-});
+}
+
