@@ -165,36 +165,36 @@
      }
 
 
-     var app = angular.module('myApp', []);
+     var app = angular.module('appdata', []); //create and initialize app using angular inside the appdata field
 
-     app.controller('myCtrl', function($scope) {
-         $scope.payments = [];
-         $scope.populate = function() {
+     app.controller('alldata', function($scope) { //in the controller field of the html and everything within the alldata field
+         $scope.payments = []; //find the payments h2
 
-             updateForm();
+         $scope.populate = function() { //begin populate function
 
-             let total = loanWithInterest;
-             let iRate = loans[0].loan_int_rate;
-             let r = iRate / 12;
-             let n = 11;
-             //loan payment formula
-             //https://www.thebalance.com/loan-payment-calculations-315564
-             let pay = 12 * (total / ((((1 + r) ** (n * 12)) - 1) / (r * (1 + r) ** (n * 12))));
-             for (let i = 0; i < 10; i++) {
-                 total -= pay
-                 let int = total * (iRate);
-                 $scope.payments[i] = {
-                     "year": loans[4].loan_year + i + 1,
-                     "payment": toMoney(pay),
-                     "amt": toMoney(int),
-                     "ye": toMoney(total += int)
+             updateForm(); //update what is visible
+
+             let endprice = loanWithInterest; //initialize an endprice value using loanwithinterest
+             let interestrate = loans[0].loan_int_rate; //initialize an interestrate value based on loan in rate
+             let r = interestrate / 12; //create an r value to represnt interest over months instead of years
+             let n = 11; //create an n value for the purpose of not including one month
+
+             let pay = 12 * (endprice / ((((1 + r) ** (n * 12)) - 1) / (r * (1 + r) ** (n * 12)))); //calculate payment
+             for (let i = 0; i < 10; i++) { //loop 10 times
+                 endprice -= pay //decrease endprice
+                 let interested = endprice * (interestrate); //create and initialize int to be equal to the montly interest rate * end price
+                 $scope.payments[i] = { //adjust payments values
+                     "year": loans[4].loan_year + i + 1, //go to year the next
+                     "payed": toMoney(pay), //apply what is payed
+                     "interestamount": toMoney(interested), //apply what the amount interested was
+                     "endbalance": toMoney(endprice += interested) //apply what the end price looks like
                  }
              }
-             $scope.payments[10] = {
-                 "year": loans[4].loan_year + 11,
-                 "payment": toMoney(total),
-                 "amt": toMoney(0),
-                 "ye": toMoney(0)
+             $scope.payments[10] = { //at position 10 aply the following values
+                 "year": loans[4].loan_year + 11, //year will equal the year of interest plus 11
+                 "payed": toMoney(endprice), //the amount payed will be equivelant to the ending price
+                 "interestamount": toMoney(0), //the amount interested should be zero as there is nothing left to increase
+                 "endbalance": toMoney(0) //the balance of what is owed will be zero as there is nothing left to interest there either.
              }
          }
      });
