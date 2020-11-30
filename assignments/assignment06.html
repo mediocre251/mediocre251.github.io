@@ -12,7 +12,7 @@
    </head>
    <body onload="">
       <div class="container">
-         <div ng-app="myApp" ng-controller="myCtrl">
+         <div ng-app="appdata" ng-controller="alldata">
             <form>
                <h1>College Debt Estimator</h1>
                <br />
@@ -82,9 +82,9 @@
                            </tr>
                            <tr ng-repeat="x in payments">
                               <td>{{ x.year }}</td>
-                              <td>{{ x.payment }}</td>
-                              <td>{{ x.amt }}</td>
-                              <td>{{ x.ye }}</td>
+                              <td>{{ x.payed }}</td>
+                              <td>{{ x.interestamount }}</td>
+                              <td>{{ x.endbalance }}</td>
                            </tr>
                         </table>
                      </div>
@@ -94,7 +94,7 @@
          </div>
       </div>
       <script src="https://mediocre251.github.io/assignments/assignment06.js"></script><!--apply personally made javascript file-->
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script><!--ajax call-->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
       <!--- jquery 3.4.1 -->
       <script
          src="https://code.jquery.com/jquery-3.4.1.min.js"
